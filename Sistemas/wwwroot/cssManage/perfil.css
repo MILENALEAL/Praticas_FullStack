@@ -1,0 +1,49 @@
+﻿.row {
+    display: normal;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 800px;
+    width: 1250px;
+    background-image:url(perfil.jpg);
+}
+
+.form-group {
+    color: #000000;
+    max-height: 250px;
+    max-width: 400px;
+    width: 420px;
+    height: 120px;
+}
+
+.btn {
+    background: #ff6a00;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+    .btn:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        font-weight: bold;
+    }
+
+.password {
+    background: #000000;
+    width: 9em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+    .password:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        font-weight: bold;
+    }

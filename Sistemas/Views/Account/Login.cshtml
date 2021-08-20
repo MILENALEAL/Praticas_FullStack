@@ -1,0 +1,55 @@
+﻿
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Bem-Vindo";
+}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/FontsStyle.css" />
+    <link rel="stylesheet" href="~/cssLoginRegistro/login.css" />
+</head>
+<div id="configuracoesDeTamanho">
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post">
+                <center><h4><b>Bem-Vindo(a)</b></h4></center>
+                <hr />
+                <div class="taxt-danger" asp-validation-summary="All"></div>
+
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="form-group-btn1">
+                    <div class="checkbox">
+                        <label asp-for="Rememberme">
+                            <input asp-for="Rememberme" />
+                            @Html.DisplayNameFor(x => x.Rememberme)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group-btn">
+                    <button class="btn btn-default" type="submit">Logar</button>
+                </div>
+
+            </form>
+        </div>
+
+
+    </div>
+</div>
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
